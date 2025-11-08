@@ -6,12 +6,44 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = 'Mario';
+function greet(name) {
+    const currentHour = new Date().getHours();
+    let greeting;
+
+    if (currentHour < 13) {
+        greeting = 'Buongiorno';
+    } else if (currentHour < 18) {
+        greeting = 'Buon pomeriggio';
+    } else {
+        greeting = 'Buonasera';
+    }
+
+    return `${greeting} ${name}.`;
+}
+
+console.log(greet(name));
+
 
 
 // Dichiara la funzione qui.
+function greet(name) {
+    const currentHour = new Date().getHours();
+    let greeting;
+
+    if (currentHour < 13) {
+        greeting = 'Buongiorno';
+    } else if (currentHour < 18) {
+        greeting = 'Buon pomeriggio';
+    } else {
+        greeting = 'Buonasera';
+    }
+
+    return `${greeting} ${name}.`;
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(greet(name));
 
 
 
